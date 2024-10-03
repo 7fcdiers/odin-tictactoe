@@ -1,0 +1,52 @@
+h1 {
+    margin: auto;
+    justify-self: center;
+}
+
+.setup {
+    margin: auto;
+    justify-items:center;
+    width: 450px;
+    display: grid;
+    grid-template-columns: 150px 100px 150px;
+    grid-template-rows: 2 100px;
+    gap: 10px;
+    border-style: dashed;
+
+    .p1 {
+        /* margin: auto; */
+        border-style: dashed;
+        grid-column: 1;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .vs {
+        margin: auto;
+        border-style: dashed;
+        grid-column: 2;
+        
+    }
+
+    .p2 {
+        /* margin: auto; */
+        border-style: dashed;
+        grid-column: 3;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .start {
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-style: dashed;
+        margin: auto;
+        button {
+            width: 3rem;
+            height: 2rem;
+            border-radius: 5px;
+            /* margin: auto; */
+        }
+    }
+}
