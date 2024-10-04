@@ -1,52 +1,116 @@
 h1 {
     margin: auto;
     justify-self: center;
+    text-align: center;
 }
 
 .setup {
     margin: auto;
+    justify-content: space-around;
     justify-items:center;
     width: 450px;
     display: grid;
     grid-template-columns: 150px 100px 150px;
     grid-template-rows: 2 100px;
     gap: 10px;
-    border-style: dashed;
+
+    label {
+        text-align: center;
+    }
 
     .p1 {
-        /* margin: auto; */
-        border-style: dashed;
         grid-column: 1;
+        grid-row: 1;
         display: flex;
         flex-flow: column;
+        justify-content: center;
     }
 
     .vs {
         margin: auto;
-        border-style: dashed;
         grid-column: 2;
+        grid-row: 1;
+        justify-content: center;
         
     }
 
     .p2 {
-        /* margin: auto; */
-        border-style: dashed;
         grid-column: 3;
+        grid-row: 1;
         display: flex;
         flex-flow: column;
+        justify-content: center;
     }
 
-    .start {
-        grid-row: 2;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        border-style: dashed;
+    .actions {
         margin: auto;
+        justify-items:center;
+        width: 450px;
+        grid-column: 1 2 3;
+        grid-row: 2;
+        display: flex;
+        justify-content:space-around;
+
         button {
-            width: 3rem;
+            margin: auto;
+            width: 4rem;
             height: 2rem;
             border-radius: 5px;
-            /* margin: auto; */
+            border-style: ridge;
+            margin: auto;   
         }
+
+        .start {
+            button {
+                background-color: green;
+    
+            }
+        }
+        .reset {
+            button {
+                background-color: red;
+    
+        }
+        }
+        
     }
+    
+}
+
+.game {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    grid-template-columns: 3 150px;
+    grid-template-columns: 3 150px;
+    font-size: xx-large;
+    font-family: fantasy;
+    font-weight: 400;
+    justify-content: space-around;
+
+    .cell {
+        display: flex; /* Utilisation de flexbox */
+        align-items: center; /* Centrage vertical */
+        justify-content: center; /* Centrage horizontal */
+        outline:1px solid black;
+        width: 150px;
+        height: 150px;
+    }
+
+    .cell-p1 {
+        background-color: plum;
+    }
+
+    .cell-p2 {
+        background-color: darkcyan;
+    }
+
+}
+
+.result {
+    margin: auto;
+    font-size: 4rem;
+    font-family: fantasy;
+    text-align: center;
 }
